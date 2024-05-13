@@ -29,9 +29,13 @@ namespace Explorando.Models
         public void ListarAlunos()
         {
             Console.WriteLine($"Alunos do curso de: {Nome}");
-            foreach (Pessoa aluno in Alunos)
+            for (int i = 0; i < Alunos.Count; i++)
             {
-                Console.WriteLine(aluno.NomeCompleto);
+                
+                //string txt = "N° " + i + " - " + Alunos[i].NomeCompleto;
+                string txt = $"N° {i + 1} - {Alunos[i].NomeCompleto}"; // Interpolação no lugar da concatenação
+                Console.WriteLine(txt);
+
             }
         }
 

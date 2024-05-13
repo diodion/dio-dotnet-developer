@@ -16,6 +16,11 @@ namespace Explorando.Models
             Nome = nome;
             Sobrenome = sobrenome;
         }
+        public void Descontruct(out string nome, out string sobrenome)
+        {
+            nome = Nome;
+            sobrenome = Sobrenome;
+        }
         // Criamos a string _nome, que servirá de validação para a variavél Nome
         private string _nome; 
         private int _idade;
