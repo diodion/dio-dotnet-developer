@@ -1,8 +1,9 @@
-﻿
+﻿using Explorando.Models;
+using Newtonsoft.Json;
 
-using Explorando.Models;
 
-LeituraArquivo arquivo = new();
+
+/* LeituraArquivo arquivo = new();
 
 var(sucesso, linhas, _ ) = arquivo.LerArquivo("files/Leitura.txt"); // Aqui estou fazendo descarte da QtdLinhas com o _ no lugar do QtdLinhas
 
@@ -17,7 +18,8 @@ if (sucesso)
 else
 {
     Console.WriteLine("Não Foi possível ler");
-}
+} */
+
 /* (int Id, string Nome, string Sobrenome, decimal Valor) tupla = (1, "Leopardo", "Jandira", 10.5M);
 
 Console.WriteLine(tupla.Id); */
